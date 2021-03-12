@@ -4,6 +4,10 @@ import { Document } from 'mongoose';
 @Schema()
 export class Film extends Document {
     @Prop()
+    id_element: Number;
+    @Prop()
+    type: String;
+    @Prop()
     title: String;
     @Prop()
     description: String;

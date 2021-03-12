@@ -16,7 +16,7 @@ export class FilmsService {
     */
     async getAll(): Promise<IReturn> {
         const promise = new Promise<IReturn>((resolve, reject) => {
-            this.filmModel.find().exec().then(response => {
+            this.filmModel.find().sort({id_element: -1}).exec().then(response => {
                 resolve({
                     status: 200,
                     msg: "OK",

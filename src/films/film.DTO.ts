@@ -1,4 +1,6 @@
 export class FilmDTO {
+    id_element:number;
+    type: string;
     title: string;
     description: string;
     category: string;

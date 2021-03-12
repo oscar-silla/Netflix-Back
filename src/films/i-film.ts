@@ -2,6 +2,8 @@ import { Document } from 'mongoose';
 
 export interface IFilm extends Document {
     readonly id?: string;
+    readonly id_element: number;
+    readonly type: string;
     readonly title: string;
     readonly description: string;
     readonly category: string;
